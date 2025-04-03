@@ -4,17 +4,19 @@ It uses the OpenAI API to get the answer from the model.
 file: __init__.py"""
 
 from openai import OpenAI
-
-# # Load the API key from the .env file
 from dotenv import load_dotenv
-load_dotenv()
+from os import getenv
+load_dotenv()        
 
-def print_llm_response(prompt):
+
+def print_llm_response(prompt, API_KEY=getenv("API_KEY")):
     """
     This function takes the response from the OpenAI API and prints the answer.
     :param response: The response from the OpenAI API
     """
-    client = OpenAI()
+
+    # api_key = os.getenv("OPENAI_API_KEY")
+    client = OpenAI(api_key=API_KEY)
 
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -26,5 +28,8 @@ def print_llm_response(prompt):
         ]
     )
 
-    print(completion.choices[0].message.content)
+    # print(completion.choices[0].message.content)
     return completion.choices[0].message.content
+
+# API_KEY = getenv("API_KEY")
+# print(API_KEY)
