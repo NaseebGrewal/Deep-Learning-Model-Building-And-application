@@ -64,8 +64,8 @@ def get_llm_response(prompt):
     return completion.choices[0].message.content
 
 
-print(get_llm_response("What is the capital of France?"))
-print(print_llm_response("What is the capital of France?"))
+# print(get_llm_response("What is the capital of France?"))
+# print(print_llm_response("What is the capital of France?"))
 
 
 
