@@ -1,0 +1,63 @@
+Certainly! Here's how the original text can be formatted in HTML for a Jupyter notebook, with the restaurants highlighted in orange and the best dishes in blue. However, since the provided journal entry does not contain any specific restaurants or dishes, I'll illustrate how it should be structured, and you can replace the placeholders with actual content later.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Critic Journal Entry</title>
+    <style>
+        .restaurant {
+            color: orange;
+            font-weight: bold;
+        }
+        .dish {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>this is the <span class="restaurant">**Tokyo Diner**</span> where I had the most incredible <span class="dish">**Ramen Noodles**</span>.</p>
+    <p>Next, I visited the famous <span class="restaurant">**Sushi Haven**</span> for their delightful <span class="dish">**Salmon Sashimi**</span>.</p>
+    <p>Finally, I couldn’t resist trying a burger at <span class="restaurant">**Burger Bistro**</span>, and their <span class="dish">**Truffle Cheeseburger**</span> blew my mind!</p>
+</body>
+</html>
+```
+
+To display the above HTML in a Jupyter notebook, you can use the following Python code:
+
+```python
+from IPython.core.display import display, HTML
+
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Critic Journal Entry</title>
+    <style>
+        .restaurant {
+            color: orange;
+            font-weight: bold;
+        }
+        .dish {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>this is the <span class="restaurant">**Tokyo Diner**</span> where I had the most incredible <span class="dish">**Ramen Noodles**</span>.</p>
+    <p>Next, I visited the famous <span class="restaurant">**Sushi Haven**</span> for their delightful <span class="dish">**Salmon Sashimi**</span>.</p>
+    <p>Finally, I couldn’t resist trying a burger at <span class="restaurant">**Burger Bistro**</span>, and their <span class="dish">**Truffle Cheeseburger**</span> blew my mind!</p>
+</body>
+</html>
+"""
+
+display(HTML(html_content))
+```
+
+Make sure to replace the placeholders with the actual restaurant names and dishes when you have that information.
