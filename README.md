@@ -37,6 +37,13 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
+## To install tkinter avoid using pip
+## Trying to install tkinter with pip typically won't work, as tkinter is not a standard Python package distributed through PyPI.
+## For MacOS, use Homebrew
+```bash
+brew install python-tk
+```
+
 ## Usage
 Run the following command to start model training:
 ```bash

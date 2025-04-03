@@ -1,3 +1,13 @@
+# DeepLearning.AI Short Courses 
+# Required packages
+
 openai
 python-dotenv
 setuptools
+ipython
+ipywidgets
+
+# To install tkinter avoid using pip
+# Trying to install tkinter with pip typically won't work, as tkinter is not a standard Python package distributed through PyPI.
+# For MacOS, use Homebrew
+# brew install python-tk
