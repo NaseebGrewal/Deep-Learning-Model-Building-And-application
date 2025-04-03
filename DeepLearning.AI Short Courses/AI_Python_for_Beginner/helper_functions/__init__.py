@@ -37,7 +37,7 @@ def print_llm_response(prompt):
         ]
     )
 
-    # print(completion.choices[0].message.content)
+    print(completion.choices[0].message.content)
     return completion.choices[0].message.content
 
 
