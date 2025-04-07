@@ -162,3 +162,4 @@ cython_debug/
 #.idea/
 SAML-D.csv
 SAML-D.csv.zip
+*.DS_Store
