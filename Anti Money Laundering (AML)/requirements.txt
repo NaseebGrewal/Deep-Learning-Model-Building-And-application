@@ -1,0 +1,11 @@
+# for python xgboost support for python 3.10 3.11
+pandas
+seaborn
+numpy
+matplotlib
+pillow
+scipy
+scikit-learn
+jinja2
+xgboost
+imbalanced-learn
